@@ -42,5 +42,17 @@ public class FizzBuzzTest {
         assertEquals("Buzz", result);
     }
 
+    @Test
+    void should_return_fizz_when_count_off_given_multiple_of_Seven_case(){
+        //given
+        int orderNumber = 7;
+
+        //when
+        String result = fizzBuzz.countOff(orderNumber);
+
+        //then
+        assertEquals("Whizz", result);
+    }
+
 
 }

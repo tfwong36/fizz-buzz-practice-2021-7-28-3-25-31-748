@@ -31,7 +31,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void should_return_fizz_when_count_off_given_multiple_of_Five_case(){
+    void should_return_Buzz_when_count_off_given_multiple_of_Five_case(){
         //given
         int orderNumber = 5;
 
@@ -43,7 +43,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void should_return_fizz_when_count_off_given_multiple_of_Seven_case(){
+    void should_return_Whizz_when_count_off_given_multiple_of_Seven_case(){
         //given
         int orderNumber = 7;
 
@@ -67,7 +67,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void should_return_FizzBuzz_when_count_off_given_multiple_of_Three_and_Seven_case(){
+    void should_return_FizzWhizz_when_count_off_given_multiple_of_Three_and_Seven_case(){
         //given
         int orderNumber = 21;
 
@@ -79,7 +79,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void should_return_FizzBuzz_when_count_off_given_multiple_of_Five_and_Seven_case(){
+    void should_return_BuzzWhizz_when_count_off_given_multiple_of_Five_and_Seven_case(){
         //given
         int orderNumber = 35;
 
@@ -88,6 +88,18 @@ public class FizzBuzzTest {
 
         //then
         assertEquals("BuzzWhizz", result);
+    }
+
+    @Test
+    void should_return_FizzBuzzWhizz_when_count_off_given_multiple_of_Three_Five_and_Seven_case(){
+        //given
+        int orderNumber = 35;
+
+        //when
+        String result = fizzBuzz.countOff(orderNumber);
+
+        //then
+        assertEquals("FizzBuzzWhizz", result);
     }
 
 

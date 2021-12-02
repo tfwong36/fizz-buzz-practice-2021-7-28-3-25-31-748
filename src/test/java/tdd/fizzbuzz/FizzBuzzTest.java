@@ -93,7 +93,7 @@ public class FizzBuzzTest {
     @Test
     void should_return_FizzBuzzWhizz_when_count_off_given_multiple_of_Three_Five_and_Seven_case(){
         //given
-        int orderNumber = 35;
+        int orderNumber = 105;
 
         //when
         String result = fizzBuzz.countOff(orderNumber);

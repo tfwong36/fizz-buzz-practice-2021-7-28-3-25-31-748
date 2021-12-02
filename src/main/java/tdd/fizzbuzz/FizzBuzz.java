@@ -6,21 +6,16 @@ public class FizzBuzz {
     private static final String Fizz = "Fizz";
 
     public String countOff(int orderNumber) {
-        if (orderNumber % 3 == 0 && orderNumber % 5 == 0 && orderNumber % 7 == 0)
-            return Fizz + Buzz + Whizz;
-        if (orderNumber % 5 == 0 && orderNumber % 7 == 0)
-            return Buzz + Whizz;
-        if (orderNumber % 3 == 0 && orderNumber % 7 == 0)
-            return Fizz + Whizz;
-        if (orderNumber % 3 == 0 && orderNumber % 5 == 0)
-            return Fizz + Buzz;
-        if (orderNumber % 7 == 0)
-            return Whizz;
-        if (orderNumber % 5 == 0)
-            return Buzz;
+        String outputString = "";
         if (orderNumber % 3 == 0)
-            return Fizz;
-        return String.valueOf(orderNumber);
+            outputString += Fizz;
+        if (orderNumber % 5 == 0)
+            outputString += Buzz;
+        if (orderNumber % 7 == 0)
+            outputString += Whizz;
+        if (outputString.length() == 0)
+            return String.valueOf(orderNumber);
+        return outputString;
     }
 
     public static void main(String args[]){
